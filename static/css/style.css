@@ -1,0 +1,343 @@
+/*общие настройки*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', 'Geneva', sans-serif;
+    color: #1D1D1D;
+    background: #d6f6d6;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+.container {
+    overflow: hidden;
+}
+
+/*home страничка*/
+.index-content {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/room_whith_bed.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.index-content .container {
+    margin: 0 10vw 0 10vw;
+    height: 100%;
+    text-align: center
+}
+
+.index-content .text-window {
+    padding: 10vh 0 10vh 0;
+    margin: 0 5vw 0 5vw;
+    background: rgba(29, 29, 29, 0.64);
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.index-content .text-window p {
+    padding: 2vh 2vw 2vh 2vw;
+}
+
+.index-content .center-menu {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-content .name {
+    padding: 5px;
+    font-size: 20px;
+    border: black 5px;
+}
+
+.index-content .name .name__label {
+    color: white;
+    border: black 1px;
+    text-shadow: -0 -2px 2px rgba(0, 0, 0, 0.25),
+    0 -2px 2px rgba(0, 0, 0, 0.25),
+    -0 2px 2px rgba(0, 0, 0, 0.25),
+    0 2px 2px rgba(0, 0, 0, 0.25),
+    -2px -0 2px rgba(0, 0, 0, 0.25),
+    2px -0 2px rgba(0, 0, 0, 0.25),
+    -2px 0 2px rgba(0, 0, 0, 0.25),
+    2px 0 2px rgba(0, 0, 0, 0.25),
+    -1px -2px 2px rgba(0, 0, 0, 0.25),
+    1px -2px 2px rgba(0, 0, 0, 0.25),
+    -1px 2px 2px rgba(0, 0, 0, 0.25),
+    1px 2px 2px rgba(0, 0, 0, 0.25),
+    -2px -1px 2px rgba(0, 0, 0, 0.25),
+    2px -1px 2px rgba(0, 0, 0, 0.25),
+    -2px 1px 2px rgba(0, 0, 0, 0.25),
+    2px 1px 2px rgba(0, 0, 0, 0.25),
+    -2px -2px 2px rgba(0, 0, 0, 0.25),
+    2px -2px 2px rgba(0, 0, 0, 0.25),
+    -2px 2px 2px rgba(0, 0, 0, 0.25),
+    2px 2px 2px rgba(0, 0, 0, 0.25),
+    -2px -2px 2px rgba(0, 0, 0, 0.25),
+    2px -2px 2px rgba(0, 0, 0, 0.25),
+    -2px 2px 2px rgba(0, 0, 0, 0.25),
+    2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.index-content input {
+    box-shadow: 10px 0 35px rgba(17, 16, 16, 0.68);
+}
+
+.index-content .name .name__field, input {
+    padding: 10px;
+}
+
+.index-content .btn_new_game input {
+    margin: 30px;
+    padding: 10px;
+    color: white;
+    background: #35b237;
+    border-color: #000000;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.index-content .btn_new_game input:hover {
+    background: #2fa830;
+}
+
+/*экстра страничка*/
+.extra-content {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/extra.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.extra-text {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.extra-text p {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+/*страничка игры*/
+.game-content {
+    height: 100%;
+    width: 100%;
+}
+
+.game-content-1 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/final_door.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.game-content-2 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/tunnel_1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.game-content-3 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/room_with_bed_2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.game-content-4 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/tunnel_2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.game-content-5 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/dining_room.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.game-content-6 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/electro.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.game-content-7 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/corridor.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.game-content-8 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/corridor_2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.game-content-9 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/light_room.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.game-content-10 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/basement.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.game-content-11 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/cabinet.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.game-content .container {
+    margin: 0 10vw 0 10vw;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer-window, .text-window {
+    margin: 0 5vw 0 5vw;
+    border-radius: 50px;
+    color: white;
+}
+
+.answer-window {
+    padding: 10vh 0 10vh 0;
+    background: rgba(29, 29, 29, 0.64);
+    font-size: 20px;
+}
+
+.game-content .text-window {
+    padding: 0.5vh 0 0.5vh 0;
+    background: rgba(109, 185, 69, 0.94);
+    font-size: 18px;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.game-content .text-window p {
+    padding: 1vh 2vw 1vh 2vw;
+}
+
+.answer-window li {
+    padding: 2vh 2vw 2vh 2vw;
+}
+
+.game-content .step {
+    margin-bottom: 30px;
+    padding: 1vh 1vw 1vh 1vw;
+    background: rgba(29, 29, 29, 0.23);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+}
+
+.game-content .step__label {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.game-content .step__step {
+    padding: 10px;
+}
+
+.game-content .step__submit {
+    padding: 10px;
+}
+
+
+/*финальная страница*/
+.finish-content .container {
+    margin: 0 10vw 0 10vw;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.finish-content {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/final.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.new_game p input {
+    padding: 25px;
+    background: #6dffec;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: border-radius 0.3s ease-in;
+    margin-bottom: 10vh;
+}
+
+.new_game p input:hover {
+    background: #80f5e9;
+    border-radius: 15px;
+}

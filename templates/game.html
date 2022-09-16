@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Побег из темницы
+{% endblock %}
+
+{% block app_content %}
+    <div class={{ teg }}>
+        <div class="game-content">
+            <p class="game-content__error"></p>
+            <div class="container">
+                <div class="element_up">
+                    <div class="text-window">
+                        <p>{{ name }}, вы находитесь в {{ name_room }}</p>
+                    </div>
+                    <div class="answer-window">
+                        {% with messages = get_flashed_messages() %}
+                            {% if messages %}
+                                <ul class=flashes>
+                                    {% for message in messages %}
+                                        <li>{{ message }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        {% endwith %}
+                    </div>
+                </div>
+                <div class="element_down">
+                    <div class="step">
+                        <form action="" method="post">
+                            {{ form.csrf_token() }}
+                            <p class="step__label">{{ form.step.label() }}</p>
+                            <p class="step__step">{{ form.step }}</p>
+                            <p class="step__error">
+                                {% for error in form.step.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </p>
+                            <p class="step__submit">{{ form.submit }}</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

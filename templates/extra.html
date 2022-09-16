@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    ???
+{% endblock %}
+{% block scripts %}
+    {{ super() }}
+
+    <!"импорт библиотеки jquery">
+    <script type="text/javascript" src="../static/js/jquery-3.6.0.min.js"></script>
+
+    <!"импорт функции скрывающей текст">
+    <script type="text/javascript" src="../static/js/extra.js"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="extra-content">
+        <div id="extra-text" class="extra-text">
+            <p>Ой, кажется вы провалились в текстуры</p>
+            <p>Вы можете остаться здесь и понаблюдать за прекрасной пустотой</p>
+        </div>
+    </div>
+{% endblock %}
+

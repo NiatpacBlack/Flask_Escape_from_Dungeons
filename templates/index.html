@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+    <div class="index-content">
+        <p class="index-content__error"></p>
+        <div class="container">
+            <div class="text-window">
+                <p>
+                    В данной игре вам предстоит побыть в роли человека, который очнулся один в запертом бункере. Обойти
+                    локации
+                    подземного бункера и найти способ выбраться.
+                </p>
+            </div>
+            <div class="center-menu">
+                <div class="name">
+                    <form action="" method="post">
+                        {{ form.csrf_token() }}
+                        {% for field in form if field.name not in ('csrf_token', 'submit', 'new_game') %}
+                            <div class="name__label">{{ field.label() }}</div>
+                            <div class="name__field">
+                                {{ field }}
+                                {% for error in field.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                            <div class="name__submit">{{ form.submit }}</div>
+                        {% endfor %}
+                    </form>
+                </div>
+                <div class="start">
+                    <form action="/game/10" method="get">
+                        <div class="btn_new_game">{{ form.new_game }}</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

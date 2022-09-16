@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}
+    Вы прошли игру!
+{% endblock %}
+{% block app_content %}
+    <div class="finish-content">
+        <p class="finish-content__error"></p>
+        <div class="container">
+            <div class="answer-window">
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        <ul class=flashes>
+                            {% for message in messages %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                {% endwith %}
+            </div>
+            <div class="new_game">
+                <form action="" method="post">
+                    <p>{{ form.new_game }}</p>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
